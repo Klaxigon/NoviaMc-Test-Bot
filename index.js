@@ -194,7 +194,12 @@ client.on('interactionCreate', async interaction => {
             { name: 'Gebannt', value: banned ? 'Ja' : 'Nein' },
             { name: 'Aktueller Channel', value: currentChannel },
         ],
-    };
+         timestamp: new Date(),
+          footer: {
+              text: `Server: ${interaction.guild.name}`,
+              icon_url: interaction.guild.iconURL({ dynamic: true }) || undefined,
+          },
+      };
 
     interaction.reply({ embeds: [infoEmbed] });
 }
