@@ -2,8 +2,8 @@ const { Client, GatewayIntentBits, MessageEmbed } = require('discord.js');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 
-const clientId = '1193647918662570134';
-const guildId = '1193645973172392016';
+const clientId = '//';
+const guildId = '//';
 
 const commands = [
   {
